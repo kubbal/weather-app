@@ -3,5 +3,29 @@
     <button type="submit">Get</button>
 </form>
 <pre *ngIf="this.weatherData">
-    {{ this.weatherData.main.temp }}
+    Main Temp: {{ this.weatherData.main.temp }}
+    Weather ID: {{ this.weatherData.weather[0].id }}
+    Weather Main: {{ this.weatherData.weather[0].main }}
+    Weather Description: {{ this.weatherData.weather[0].description }}
+    Weather Icon: {{ this.weatherData.weather[0].icon }}
+    Base: {{ this.weatherData.base }}
+    Main Feels Like: {{ this.weatherData.main.feels_like }}
+    Main Min Temp: {{ this.weatherData.main.temp_min }}
+    Main Max Temp:{{ this.weatherData.main.temp_max }}
+    Main Pressure:{{ this.weatherData.main.pressure }}
+    Main Humidity:{{ this.weatherData.main.humidity }}
+    Visibility: {{ this.weatherData.visibility }}
+    Wind speed: {{ this.weatherData.wind.speed }}
+    Wind deg: {{ this.weatherData.wind.deg }}
+    All clouds: {{ this.weatherData.clouds.all }}
+    Dt: {{ this.weatherData.dt }}
+    Sys type: {{ this.weatherData.sys.type }}
+    Sys id: {{ this.weatherData.sys.id }}
+    Sys country: {{ this.weatherData.sys.country }}
+    Sys sunrise: {{ this.weatherData.sys.sunrise }}
+    Sys sunset: {{ this.weatherData.sys.sunset }}
+    Timezone: {{ this.weatherData.timezone }}
+    ID: {{ this.weatherData.id }}
+    Name: {{ this.weatherData.name }}
+    Code: {{ this.weatherData.cod }}
 </pre>
